@@ -775,7 +775,7 @@
                         <div class="tracking-id">Tracking ID: GS-789456</div>
                     </div>
                     <div class="status-badge">
-                        <i class="fas fa-shipping-fast"></i>IN TRANSIT</div>
+                        <i class="fas fa-shipping-fast"></i>PORT ARRIVAL</div>
                 </div>
 
                 <div class="progress-container">
@@ -795,8 +795,8 @@
                         <div class="step-icon"><i class="fas fa-check"></i></div>
                         <div class="step-text">In Transit</div>
                     </div>
-                    <div class="step">
-                        <div class="step-icon"><i class="fas fa-port"></i></div>
+                    <div class="step completed">
+                        <div class="step-icon"><i class="fas fa-check"></i></div>
                         <div class="step-text">Port Arrival</div>
                     </div>
                     <div class="step">
@@ -877,7 +877,7 @@
         </div>
         <div class="detail-item">
             <span class="detail-label">Status:</span>
-            <span class="detail-value">In Transit</span>
+            <span class="detail-value">Port Arrival</span>
         </div>
         <div class="detail-item">
             <span class="detail-label">Vessel Name:</span>
@@ -989,7 +989,7 @@
             // Progress bar animation
             const progressBar = document.querySelector('.progress-bar');
             let width = 0;
-            const targetWidth = 50;
+            const targetWidth = 70;
             
             const animateProgress = () => {
                 if (width < targetWidth) {
